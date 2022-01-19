@@ -1,0 +1,13 @@
+name: Schedule
+
+on:
+  schedule:
+    - cron:  '0 21 * * *'
+
+jobs:
+  Modern:
+    name: prepare
+    runs-on: ubuntu-latest
+    steps:
+        - name: reset
+          run: echo "run"
