@@ -5,9 +5,8 @@ on:
     - cron:  '* * * * *'
 
 jobs:
-  Modern:
-    name: prepare
+  test_schedule:
     runs-on: ubuntu-latest
     steps:
-        - name: reset
-          run: echo "run"
+      - name: reset
+        run: echo "run"
